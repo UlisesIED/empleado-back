@@ -45,7 +45,7 @@ Para crear una cuenta de super usuario se usara el siguiente comando:
     role: 1
 
 
-### 'Importante deben de asignar el rol 1 si no, no les dara acceso a las paginas correspondientes'
+### `Importante deben de asignar el rol 1 si no, no les dara acceso a las paginas correspondientes`
 
 Con esta cuenta podemos acceder al sitio web como administrador.
 
