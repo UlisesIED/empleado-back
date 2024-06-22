@@ -1,0 +1,11 @@
+insert into catalogos_puesto (descripcion) values 
+    ('CEO'),
+    ('Desarrollador de software'),
+    ('Administración'),
+    ('Recursos Humanos');
+
+insert into catalogos_parentesco (descripcion) values 
+    ('Padre'),
+    ('Hijo/a'),
+    ('Hermano/a'),
+    ('Abuelo/a');
