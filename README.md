@@ -40,6 +40,13 @@ Ahora cargaremos los datos de las tablas catálogo, ejecutamos el siguiente coma
 Para crear una cuenta de super usuario se usara el siguiente comando:
 ### `python3 manage.py createsuperuser`
 
+    username: [Tú usuario]
+    password: [Tú contraseña]
+    role: 1
+
+
+### 'Importante deben de asignar el rol 1 si no, no les dara acceso a las paginas correspondientes'
+
 Con esta cuenta podemos acceder al sitio web como administrador.
 
 ## Cargar el servidor
