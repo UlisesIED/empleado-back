@@ -75,6 +75,20 @@ class EmpleadosApiViewSet(ModelViewSet):
         print(request.data)
         password = request.data.get('password', None)
         empleado = Empleados.objects.get(id = request.data['id'])
+        image64 = None
+        try:
+            imagen = request.data.get('fotografia', None)
+            if imagen:
+                request.data._mutable = True
+                file_content = request.data['fotografia'].read()
+                base64_string = base64.b64encode(file_content).decode('utf-8')
+                image_type = imghdr.what(None, h=file_content)
+                image64 = f"data:image/{image_type};base64,{base64_string}"
+                print("imagen")
+                request.data["fotografia"] = image64
+        except Exception as e:
+            print("Error en la generación de imagen en Base64")
+            return Response(status=status.HTTP_400_BAD_REQUEST)
         try:
             if password: 
                 usuario = Users.objects.get(id = empleado.user.id)
