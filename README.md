@@ -13,7 +13,7 @@ Una vez creado se deberán activar el entorno virtual
 ### `source nombre-env/bin/activate`
 
 Ya activado se deberan instalar las dependencias del archivo requeriments.txt
-### `pip3 install -r requeriments`
+### `pip3 install -r requirements.txt`
 
 ## Base de datos
 
