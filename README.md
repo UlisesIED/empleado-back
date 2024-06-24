@@ -33,7 +33,17 @@ ya levantado nuestra base de datos se harán las migraciones con los siguientes 
 
 Ahora cargaremos los datos de las tablas catálogo, ejecutamos el siguiente comando (estando dentro de la carpeta del proyecto).
 
+Nombre del backup
+### `backup.txt`
+
+Comando para acceder a la base de datos
 ### `docker exec -it postgres_laureate psql db_laureate usr_laureate`
+
+    Paso 1: Entrar a la base de datos con el comando para acceder a la base de datos.
+    
+    Paso 2: Copiar el contenido del archivo backup.txt y pegarlo en la terminal recíen iniciada.
+
+    Paso 3: Para salir de la consola de SQL '\q' 
 
 ## Creación del primer usuario
 
